@@ -1,0 +1,2 @@
+# Ignore the generated web pages, which is hosted in another repository.
+/public
