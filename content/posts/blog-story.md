@@ -6,7 +6,7 @@ categories:
 tags:
 - "demo"
 - "博客方法"
-mhchem: true
+math: true
 ---
 
 距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。
@@ -43,37 +43,197 @@ mhchem: true
 
 ## 博客功能测试
 
-还是例行地测试一下这个博客的功能。比如说**加粗**、_斜体_、<u>下划线</u>、<kbd>快捷键</kbd>、`代码化文字`、~~删除线~~等等。它应该还支持 Emoji：:joy: :smile_cat: ，以及行内的数学公式 $\displaystyle \frac12$、$E = mc^2$ 等等。行间的数学公式：
+还是例行地，要测试一下这个博客的表现力。我所使用的主题 LoveIt 在 Hugo 的基础上，加入了一些自己的 shortcodes，同时，我也把它 fork 了一份，做了一些自己的修改（是的，我已经有这个能力了！现在 html 和 css 我都能看懂一些了）。所有的网页与文章，均是使用 Markdown 写成。
+
+### 基本格式化
+
+首先是一些基本的格式化能力，比如列表与 inline markup：
+
+```
+- 这是**加粗过的**与_斜体的_文字，这是 Markdown 的基本功能
+- 这是~~带有删除线的~~文字，这是 Github Flavored Markdown 的功能
+- 这是<u>带有下划线</u>的、<kbd>像快捷键的</kbd>文字，这是用 HTML 标签实现的
+```
+
+显示效果为：
+
+- 这是**加粗过的**与_斜体的_文字，这是 Markdown 的基本功能
+- 这是~~带有删除线的~~文字，这是 Github Flavored Markdown 的功能
+- 这是<u>带有下划线</u>的、<kbd>像快捷键的</kbd>文字，这是用 HTML 标签实现的
+
+同时还有有序列表与代办清单：
+
+1. 这是有序的
+2. 你看，是有序的吧
+
+代办清单真的是很方便的功能了：
+
+- [x] 事项1
+- [x] 事项2
+- [ ] 事项3
+
+可以放入一条分割线：
+
+---
+
+也可以插入一条引用内容：
+
+> 这是被引用的内容。
+
+全部 Markdown 标准可以参照[Hugo Markdown Reference](https://www.markdownguide.org/tools/hugo/)。
+
+### 表格与 Shortcodes
+
+下面用表格的形式展示一下 shortcodes
+
+Shortcodes 是 Hugo 用来拓展内容形式的重要方式。在 LoveIt 主题的文档中，介绍了几种内置的 shortcodes：
+
+| Shortcode | 作用 |
+| -- | -- |
+| figure | 插入图片 |
+| gist | 嵌入 gist |
+| highlight | 插入代码块 |
+| instagram | 嵌入 Instagram |
+| param | 使用此页面的某个 param |
+| ref/relref | |
+| tweet | 嵌入 Twitter 推文 |
+| vimeo | 嵌入 Vimeo 视频 |
+| youtube | 嵌入 Youtube 视频 |
+
+以及 LoveIt 主题引入的新 shortcodes:
+
+| Shortcode | 作用 |
+| -- | -- |
+| style | 实现特定 HTML 样式 |
+| link | 链接，但是能够在代码块中使用 |
+| image | 更强大的图片插入方式 |
+| admonition | 不知道怎么翻译，类似“警告”或者“横幅”吧 |
+| mermaid | 标准化的流程图、时序图、甘特图等等 |
+| echarts | 交互式的数据可视化库 |
+| mapbox | 交互式地图 |
+| music | 内嵌音乐播放器 |
+| bilibili | 嵌入 Bilibili 内容 |
+| typeit | 打字动画 |
+| script | 插入 Javascript 脚本 |
+
+这些 shortcode 的使用方式在文档中描述得很清楚了，几个经常要用到的在后文展示。
+
+### 图片
+
+一个绘声绘色的博客离不开丰富多彩的图片。首先是最基本的图片显示方式：用 Markdown 语法实现：
+
+``` Markdown
+![头像](/img/profile_picture.png)
+```
+
+效果为
+
+![头像](/img/profile_picture.png)
+
+同时，Hugo 的 figure shortcode 能够实现更棒的效果，比如包含字幕、更合适的大小与位置。同一张图片用 figure 来显示：
+
+```Markdown
+{{</* figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" */>}}
+```
+
+{{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
+
+LoveIt 主题提供了一个更棒的 shortcode，叫做 image，甚至能支持 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)。它的效果是这样的：
+
+{{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
+
+### 公式与代码
+
+LoveIt 主题默认使用 KaTeX 来显示公式，我却发现它连多行的矩阵都显示不出来，于是手动修改主题，使用 MathJax 了。
+
+输入以下公式（由于 Markdown 引擎的原因，所有换行符需要输入四个反斜杠）：
+
+```Markdown
 $$
-W_e = \int_\Omega \vec{D} \cdot \vec{E} d\Omega =
+\frac14
 \begin{bmatrix}
-W_{e11} & W_{e12} \newline
-W_{e21} & W_{e22}
+U_1 & U_2 & \ldots & U_n
 \end{bmatrix}
+\begin{bmatrix}
+C_{11} & C_{12} & \ldots & C_{1n}\\\\
+C_{21} & C_{22} & \ldots & C_{2n}\\\\
+\vdots & \vdots & \ddots & \vdots\\\\
+C_{n1} & C_{n2} & \ldots & C_{nn}
+\end{bmatrix}
+\begin{bmatrix}
+U_1\\\\
+U_2\\\\
+\vdots\\\\
+U_n
+\end{bmatrix}
+= W_e = \frac12 \int_{\Omega_\text{conductors}} \varepsilon \vec{E}^2 d\Omega
+$$
+```
+
+这是公式显示效果：
+
+$$
+\frac14
+\begin{bmatrix}
+U_1 & U_2 & \ldots & U_n
+\end{bmatrix}
+\begin{bmatrix}
+C_{11} & C_{12} & \ldots & C_{1n}\\\\
+C_{21} & C_{22} & \ldots & C_{2n}\\\\
+\vdots & \vdots & \ddots & \vdots\\\\
+C_{n1} & C_{n2} & \ldots & C_{nn}
+\end{bmatrix}
+\begin{bmatrix}
+U_1\\\\
+U_2\\\\
+\vdots\\\\
+U_n
+\end{bmatrix}
+= W_e = \frac12 \int_{\Omega_\text{conductors}} \varepsilon \vec{E}^2 d\Omega
 $$
 
-**目前这个主题存在的一个问题是，它无法渲染类似矩阵的多行公式，就像图中显示的那样，希望日后我能解决。**
+同样地，代码块也是很容易的功能。我一般直接使用 Markdown 内置的功能来显示。在 Markdown 里写这些（其中还指明了行号从 20 开始，以及把第2、第4-5行高亮）：
 
-虽然我不学化学，但偶尔可能要用上化学式和化学方程式，比如水是 $\ce{H2O}$，氢气燃烧的化学方程式是
-$$
-\ce{2H2 + O2 ->[点燃] 2H2O}
-$$
+{{< highlight Markdown >}}
+```Python {hl_lines=2,"4-5", linenostart=20}
+a = []
+a[0] = 1
+a[1] = 1
+i = 2
+while i < 100:
+    a[i] = a[i-1] + a[i-2]
+print(a[100])
+```
+{{< / highlight >}}
 
-还有不同的清单
+```Python {hl_lines=[2,"4-5"], linenostart=20}
+a = []
+a[0] = 1
+a[1] = 1
+i = 2
+while i < 100:
+    a[i] = a[i-1] + a[i-2]
+print(a[100])
+```
 
-- 项目1
-- 项目2
-- 项目3
+### 嵌入内容
 
-或者
+用 shortcode 也可以方便地插入 Youtube 视频：
 
-1. 项目1
-2. 项目2
-3. 项目3
+``` Markdown
+{{</* youtube sGIm0-dQd8M */>}}
+```
 
-还有
+{{< youtube sGIm0-dQd8M >}}
 
-- [x] 任务1
-- [x] 任务2
-- [ ] 任务3
+（当然，如果你看不到这个 Youtube 视频也不要惊异，毕竟 Youtube 是一个不存在的网站嘛。）
 
+或者是 Bilibili 视频：
+
+``` Markdown
+{{</* bilibili BV1Rz411i7bN */>}}
+```
+
+{{< bilibili BV1Rz411i7bN >}}
+
+或者嵌入一张地图
