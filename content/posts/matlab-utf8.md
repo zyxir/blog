@@ -2,7 +2,7 @@
 title: "如何在 Matlab 中启用 UTF-8 编码"
 date: 2020-07-21T19:26:11+08:00
 categories:
-- 软件技巧
+- 软件工具
 tags:
 - 中文乱码
 - UTF-8
