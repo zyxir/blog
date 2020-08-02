@@ -2,7 +2,7 @@
 title: "如何在新电脑上安装 Microsoft 365"
 date: 2020-07-21T23:05:27+08:00
 categories:
-- 软件技巧
+- 教程
 tags:
 - Microsoft 365
 ---
