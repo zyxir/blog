@@ -82,9 +82,15 @@ enableEmoji = true
     title = ""
     weight = 3
   [[menu.main]]
+    identifier = "links"
+    name = "友情链接"
+    url = "/links/"
+    weight = 4
+  [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
+    weight = 5
 
 # Hugo 解析文档的配置
 [markup]
@@ -211,7 +217,7 @@ enableEmoji = true
       # 主页显示头像的 URL
       avatarURL = "/images/avatar.png"
       # LoveIt 更改 | 0.2.7 主页显示的网站标题 (支持 HTML 格式)
-      title = "Zyxiria"
+      title = "Zyxiria 原创博客"
       # 主页显示的网站副标题
       subtitle = "这是一个关于软件工具、硬件与语言的个人博客"
       # 是否为副标题显示打字机动画
@@ -415,7 +421,7 @@ enableEmoji = true
     enable = false
     # Google Analytics
     [params.analytics.google]
-      id = ""
+      id = "UA-151679109-2"
       # 是否匿名化用户 IP
       anonymizeIP = true
     # Fathom Analytics
