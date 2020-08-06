@@ -326,7 +326,7 @@ enableEmoji = true
       # Disqus 评论系统设置
       [params.page.comment.disqus]
         # LoveIt 新增 | 0.1.1
-        enable = true
+        enable = false
         # Disqus 的 shortname，用来在文章中启用 Disqus 评论系统
         shortname = "zyxiria"
       # Gitalk 评论系统设置
@@ -339,25 +339,25 @@ enableEmoji = true
         clientSecret = ""
       # Valine 评论系统设置
       [params.page.comment.valine]
-        enable = false
-        appId = ""
-        appKey = ""
+        enable = true
+        appId = "xfI1LVbg7IsL1FID93j2fuJe-gzGzoHsz"
+        appKey = "rNDYlHxuWjbSHyUT8X9cCNsk"
         placeholder = ""
         avatar = "mp"
         meta= ""
         pageSize = 10
-        lang = ""
+        lang = "zh-CN"
         visitor = true
         recordIP = true
         highlight = true
-        enableQQ = false
+        enableQQ = true
         serverURLs = ""
         # LoveIt 新增 | 0.2.6 emoji 数据文件名称, 默认是 "google.yml"
         # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
         # 位于 "themes/LoveIt/assets/data/emoji/" 目录
         # 可以在你的项目下相同路径存放你自己的数据文件:
         # "assets/data/emoji/"
-        emoji = ""
+        emoji = "google.yml"
       # Facebook 评论系统设置
       [params.page.comment.facebook]
         enable = false
