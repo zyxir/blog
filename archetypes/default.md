@@ -1,6 +1,18 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+lastmod: {{ .Date }}
+tags: []
+categories: []
+mathjax: false
+mathjaxEnableSingleDollar: false
+mathjaxEnableAutoNumber: false
+flowchartDiagrams:
+  enable: false
+  options: ""
+sequenceDiagrams: 
+  enable: false
+  options: ""
 ---
 
+<!--more-->
