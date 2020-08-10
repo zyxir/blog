@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "http://blog.ericzhuochen.com"
 languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"                             # en / zh-cn / ... (This field determines which i18n file to use)
 title = "Zyxiria"
@@ -48,6 +48,16 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   weight = 40
   identifier = "tags"
   url = "/tags/"
+[[menu.main]]
+  name = "友链"
+  weight = 50
+  identifier = "links"
+  url = "/links/"
+[[menu.main]]
+  name = "关于"
+  weight = 60
+  identifier = "about"
+  url = "/about/"
 
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
