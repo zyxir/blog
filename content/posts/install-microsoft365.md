@@ -19,11 +19,11 @@ tags:
 
 打开开始菜单，点击那个长得像齿轮的图标，从而打开「Windows 设置」。
 
-{{< image src="https://i.loli.net/2020/07/21/ZOxEoSBUeHmV5Nf.png" alt="Windows 设置" title="Windows 设置" >}}
+{{< figure src="https://i.loli.net/2020/07/21/ZOxEoSBUeHmV5Nf.png" alt="Windows 设置" title="Windows 设置" >}}
 
 选择「账户」，在「账户信息」下，如果你的 Windows 10 使用的是微软帐号，应该会和我这里比较类似
 
-{{< image src="https://i.loli.net/2020/07/21/Bw8eQ6jtOuIl4TN.png" alt="账户信息" title="账户信息" >}}
+{{< figure src="https://i.loli.net/2020/07/21/Bw8eQ6jtOuIl4TN.png" alt="账户信息" title="账户信息" >}}
 
 如果你显示的是“本地账户”，你可能需要登录一下你的微软帐号。
 
@@ -35,15 +35,15 @@ tags:
 
 登录了之后，在这里点击「我的 Microsoft 账户」。
 
-{{< image src="https://i.loli.net/2020/07/21/AtJl1RiWmKxP3hG.png" title="我的 Microsoft 账户" >}}
+{{< figure src="https://i.loli.net/2020/07/21/AtJl1RiWmKxP3hG.png" title="我的 Microsoft 账户" >}}
 
 如果你已经订阅了 Microsoft 365，这里应该就会显示成这样：
 
-{{< image src="https://i.loli.net/2020/07/21/HcW4Z3JNURhapTj.png" title="Microsoft 365 订阅" >}}
+{{< figure src="https://i.loli.net/2020/07/21/HcW4Z3JNURhapTj.png" title="Microsoft 365 订阅" >}}
 
 点击那个「安装」之后，应该会打开这个页面，再点击「安装」，跟着指示一步步安装就好啦！
 
-{{< image src="https://i.loli.net/2020/07/21/yQAGiXZ7ecxmStk.png" title="安装" >}}
+{{< figure src="https://i.loli.net/2020/07/21/yQAGiXZ7ecxmStk.png" title="安装" >}}
 
 由于我这里已经安装过了，后面的详细指示，就没有办法做成图片了，发挥你的聪明才智吧！
 
@@ -53,6 +53,6 @@ tags:
 
 安装之后，你应该就可以从开始菜单打开 Microsoft 365 下的程序了。比如说，如果我想打开 Word，我就可以在这里找到它：
 
-{{< image src="https://i.loli.net/2020/07/21/RHTPz4FW85qYZwB.png" title="打开 Word" >}}
+{{< figure src="https://i.loli.net/2020/07/21/RHTPz4FW85qYZwB.png" title="打开 Word" >}}
 
 （全文完）

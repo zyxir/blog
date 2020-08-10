@@ -164,14 +164,6 @@ Shortcodes 是 Hugo 用来拓展内容形式的重要方式。在 LoveIt 主题�
 
 {{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
 
-LoveIt 主题提供了一个更棒的 shortcode，叫做 image，甚至能支持 [lightgallery.js](https://github.com/sachinchoolur/lightgallery.js)。
-
-```Markdown
-{{</* figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" */>}}
-```
-
-{{< figure src="/img/profile_picture.png" alt="我的头像" title="我的头像" >}}
-
 ### 公式与代码
 
 LoveIt 主题默认使用 KaTeX 来显示公式，我却发现它连多行的矩阵都显示不出来，于是手动修改主题，使用 MathJax 了。
@@ -244,26 +236,3 @@ i = 2
 while i < 100:
     a[i] = a[i-1] + a[i-2]
 print(a[100])
-```
-
-### 嵌入内容
-
-用 shortcode 也可以方便地插入 Youtube 视频：
-
-``` Markdown
-{{</* youtube sGIm0-dQd8M */>}}
-```
-
-{{< youtube sGIm0-dQd8M >}}
-
-（当然，如果你看不到这个 Youtube 视频也不要惊异，毕竟 Youtube 是一个不存在的网站嘛。）
-
-或者是 Bilibili 视频：
-
-``` Markdown
-{{</* bilibili BV1Rz411i7bN */>}}
-```
-
-{{< bilibili BV1Rz411i7bN >}}
-
-嵌入功能很丰富，也很耐玩。在后面的博文中再慢慢尝试啦！
