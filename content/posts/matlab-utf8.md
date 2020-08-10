@@ -21,7 +21,7 @@ tags:
 
 网上很容易搜到，在 Matlab 的命令行中可以使用 `feature('locale')` 命令来查看当前的编码方式。我的结果如下：
 
-{{< image src="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png" alt="feature('locale') 的输出结果" caption="feature('locale') 的输出结果" >}}
+{{< figure src="https://i.loli.net/2020/07/21/isnvfjDq4X3T6oh.png" alt="feature('locale') 的输出结果" caption="feature('locale') 的输出结果" >}}
 
 可以看到，默认的编码方式，果然基本都是 GBK，真的是害人。我用的已经是 Matlab 的 R2019a 版本了，居然还默认使用 GBK 编码，这是多么顽固？
 
@@ -37,7 +37,7 @@ tags:
 
 如果不带参数地运行这一函数，会显示
 
-{{< image src="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png" alt="slCharacterEncoding() 的输出结果" caption="输出结果" >}}
+{{< figure src="https://i.loli.net/2020/07/21/cSfHXaWwQipDsBR.png" alt="slCharacterEncoding() 的输出结果" caption="输出结果" >}}
 
 果然是 GBK。那我把它改掉呢？但是事实是，**改不掉**。即使输入 `slCharacterEncoding('UTF-8')` 之后，在输入 `slCharacterEncoding()` 的结果已经变成了 'UTF-8'，文件还是会乱码。哪怕重启 Matlab，也会乱码。所以说，官方文档没用。
 
