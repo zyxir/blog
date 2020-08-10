@@ -1,7 +1,6 @@
 ---
 title: "实际体验第二代小红点键盘"
 date: 2020-08-03T14:22:53+08:00
-featuredImage: "https://i.loli.net/2020/08/05/Tp9XjFWQOEUf7IJ.jpg"
 categories:
 - 产品测评
 tags:
@@ -9,6 +8,8 @@ tags:
 - 小红点
 - 键盘
 ---
+
+![键盘外观](https://i.loli.net/2020/08/05/Tp9XjFWQOEUf7IJ.jpg)
 
 联想 ThinkPad 出品的第二代小红点键盘已经问世有几个月了，但是由于它的小众性，网上能够找到的测评并不多。作为一个粉丝，我实际买了一块回来使用。到目前为止，体验还是很不错的。
 
