@@ -6,7 +6,8 @@ categories:
 tags:
 - "demo"
 - "博客方法"
-math: true
+mathjax: true
+mathjaxEnableSingleDollar: true
 ---
 
 距离我第一次创立作为独立网站的个人博客，已经过去了两个年头，但是直到今天，我还在折腾博客的方式，比如平台、管理方式、外观、布局等，而不是内容本身。
@@ -213,6 +214,8 @@ U_n
 \end{bmatrix}
 = W_e = \frac12 \int_{\Omega_\text{conductors}} \varepsilon \vec{E}^2 d\Omega
 $$
+
+还可以输入这样的行内公式：$E = mc^2$。
 
 同样地，代码块也是很容易的功能。我一般直接使用 Markdown 内置的功能来显示。在 Markdown 里写这些（其中还指明了行号从 20 开始，以及把第2、第4-5行高亮）：
 
