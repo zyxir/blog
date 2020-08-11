@@ -9,12 +9,7 @@ categories:
 mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false
-flowchartDiagrams:
-  enable: false
-  options: ""
-sequenceDiagrams: 
-  enable: false
-  options: ""
+mermaid: false
 ---
 
 <!--more-->
