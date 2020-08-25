@@ -4,7 +4,7 @@ date: 2018-11-04
 categories:
 - "硬件"
 tags:
-- "hardware design"
+- "硬件设计"
 ---
 
 ## Concepts
