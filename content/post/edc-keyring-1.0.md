@@ -4,7 +4,7 @@ date: 2020-08-28T20:25:40+08:00
 tags:
 - EDC
 categories:
-- 个人规范化
+- 个人
 mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false

@@ -4,8 +4,7 @@ date: 2020-08-21T01:38:44+08:00
 tags:
 - 极简主义
 categories:
-- 杂谈
-- 软件工具
+- 个人
 mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false
