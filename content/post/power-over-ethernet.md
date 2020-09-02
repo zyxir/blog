@@ -4,7 +4,7 @@ date: 2020-09-02T10:04:21+08:00
 tags:
 - PoE
 categories:
-- 电子、电气与通信
+- 电子电气与通信
 mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false

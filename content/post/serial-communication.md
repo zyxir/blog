@@ -5,7 +5,7 @@ tags:
 - 串行通信
 - MGT
 categories:
-- 电子、电气与通信
+- 电子电气与通信
 mathjax: true
 mathjaxEnableSingleDollar: true
 mathjaxEnableAutoNumber: false
