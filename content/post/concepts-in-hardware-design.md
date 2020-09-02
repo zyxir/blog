@@ -2,9 +2,8 @@
 title: "Some Concepts in Hardware Design"
 date: 2018-11-04
 categories:
-- "硬件"
-tags:
 - "硬件设计"
+tags:
 ---
 
 ## Concepts
