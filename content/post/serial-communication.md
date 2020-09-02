@@ -2,9 +2,10 @@
 title: "关于串行通信的调研"
 date: 2020-08-29T11:11:29+08:00
 tags:
--
+- 串行通信
+- MGT
 categories:
--
+- 电子、电气与通信
 mathjax: true
 mathjaxEnableSingleDollar: true
 mathjaxEnableAutoNumber: false
