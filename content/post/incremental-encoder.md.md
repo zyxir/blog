@@ -2,9 +2,10 @@
 title: "增量式编码器"
 date: 2020-09-02T14:48:04+08:00
 tags:
--
+- 编码器
+- 传感器
 categories:
--
+- 电子电气与通信
 mathjax: true
 mathjaxEnableSingleDollar: true
 mathjaxEnableAutoNumber: false
