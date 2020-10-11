@@ -10,6 +10,7 @@ mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false
 mermaid: false
+draft: true
 ---
 
 ![](/cba2a026-d31b-4c88-8312-983403f78584.jpg)
