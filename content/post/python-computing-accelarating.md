@@ -5,7 +5,7 @@ tags:
 - Python
 - 科学计算
 categories:
-- 计算机相关
+- 计算机与软件
 mathjax: false
 mathjaxEnableSingleDollar: false
 mathjaxEnableAutoNumber: false

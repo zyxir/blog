@@ -2,7 +2,7 @@
 title: "Ideal Emacs Configuration"
 date: 2018-11-18
 categories:
-- 软件工具
+- 计算机与软件
 tags:
 - Emacs
 - 文本编辑器

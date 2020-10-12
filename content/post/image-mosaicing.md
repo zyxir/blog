@@ -6,7 +6,7 @@ tags:
 - 图像拼接
 - 算法
 categories:
-- 计算机相关
+- 计算机与软件
 mathjax: true
 mathjaxEnableSingleDollar: true
 mathjaxEnableAutoNumber: false
