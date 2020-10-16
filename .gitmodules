@@ -1,6 +1,3 @@
-[submodule "themes/LoveIt"]
-	path = themes/LoveIt
-	url = https://github.com/zyxir/LoveIt.git
 [submodule "themes/even"]
 	path = themes/even
 	url = https://github.com/zyxir/hugo-theme-even
